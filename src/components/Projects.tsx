@@ -6,6 +6,7 @@ import Posting from "../assets/posting.png";
 import Anify from "../assets/anify.png";
 import PowerIndex from "../assets/power.png";
 import CovidTracker from "../assets/covidtracker.png";
+import ReactUIX from "../assets/reactuix.png";
 
 interface ProjectProps {
   title: string;
@@ -88,11 +89,20 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
+      title: "React UIX Component Library",
+      description:
+        "A reusable React component library designed to streamline UI development. Built and published custom components like Button, Alert, and Card with TypeScript for type safety. Optimized the build process using Rollup. Ensured best practices for component design and package publishing on npm.",
+      image: ReactUIX,
+      tags: ["Reusable components", "React.js", "CSS"],
+      githubLink: "https://github.com/prathmeshshinde/react-uix",
+      liveLink: "https://www.npmjs.com/package/react-uix",
+    },
+    {
       title: "Posting App",
       description:
         "A fully functional social media app with authentication via Firebase. Features like, dislike, and bookmark posts. Users can edit and update profiles.",
       image: Posting,
-      tags: ["Firebase", "React.js", "CSS"],
+      tags: ["Firebase", "React.js", "Ant Design"],
       githubLink: "https://github.com/prathmeshshinde/postingWeb",
       liveLink: "https://posting-web.vercel.app/",
     },
@@ -110,7 +120,7 @@ const Projects = () => {
       description:
         "A system that allows users to check various countries' power depending on the country's Army, Navy, and Air Force. Built using React.js and Firebase.",
       image: PowerIndex,
-      tags: ["React.js", "Firebase"],
+      tags: ["React.js", "Firebase", "react-router"],
       githubLink: "https://github.com/prathmeshshinde/powerindex",
       liveLink: "https://powerindex-cf70b.web.app/",
     },
