@@ -15,21 +15,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "prathmeshshinde105@gmail.com",
-      href: "mailto:prathmeshshinde105@gmail.com",
+      value: "prathmeshshinde1008@gmail.com",
+      href: "mailto:prathmeshshinde1008@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 8355919607",
-      href: "tel:+918355919607",
+      value: "+91 9699867574",
+      href: "tel:+919699867574",
     },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Navi Mumbai, India",
-      href: "https://maps.google.com/?q=Navi+Mumbai,India",
-    },
+    // {
+    //   icon: MapPin,
+    //   label: "Location",
+    //   value: "Navi Mumbai, India",
+    //   href: "https://maps.google.com/?q=Navi+Mumbai,India",
+    // },
   ];
 
   const socialLinks = [
@@ -149,7 +149,7 @@ const Contact = () => {
             </div>
             <Button asChild className="gap-2">
               <a
-                href="https://drive.google.com/file/d/1mWrHvQ6iFSaPMDVg74jJp10SEUDcy2rW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lWgms5EqmkYggR0h9_XimuSxYqQvTsqy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
