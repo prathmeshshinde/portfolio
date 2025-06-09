@@ -83,7 +83,7 @@ const Hero = () => {
                 <span className="sr-only">GitHub</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/prathmesh-shinde-56920b1b9/"
+                href="https://www.linkedin.com/in/prathmesh-shinde-4b474336a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-primary transition-colors"
@@ -92,7 +92,7 @@ const Hero = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a
-                href="mailto:prathmeshshinde105@gmail.com"
+                href="mailto:prathmeshshinde1008@gmail.com"
                 className="text-foreground/70 hover:text-primary transition-colors"
               >
                 <Mail size={24} />

@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/prathmesh-shinde-56920b1b9/",
+      href: "https://www.linkedin.com/in/prathmesh-shinde-4b474336a/",
     },
   ];
 
