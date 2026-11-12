@@ -1,5 +1,13 @@
 # Welcome to your Lovable project
 
+## Portfolio quick reference
+
+- **Edit content:** bio, projects, experience, skills, stats and links all live in `src/data/profile.ts`.
+- **Pages:** `/` (home), `/about`, `/contact` and a 404 page. Routes are defined in `src/App.tsx`.
+- **Snake game:** `src/components/game/`. Open it from the home-page banner, the footer, the 404 page, or by typing the Konami code (↑ ↑ ↓ ↓ ← → ← → B A).
+- **Shared leaderboard (optional):** scores are saved on each player's device by default. To make them global, set `VITE_LEADERBOARD_URL` to an endpoint that answers `GET ?mode=classic|arena` and `POST { name, score, level, mode }` with a JSON array of scores.
+- **Hosting outside Lovable:** this is a single-page app with client-side routes, so the host must serve `index.html` for unknown paths (e.g. a rewrite rule on Vercel or Netlify).
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/5314f941-2506-4b6d-a9d8-cf1a88e2d7e6

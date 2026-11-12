@@ -1,43 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark" style="color-scheme: dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>प्रthmesh Shinde - Frontend Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Prathmesh Shinde — Frontend Developer</title>
     <meta
       name="description"
-      content="Portfolio website of Prathmesh Shinde, a results-driven Frontend Developer specializing in React, TypeScript, and modern web technologies."
+      content="Portfolio of Prathmesh Shinde, a results-driven Frontend Developer specializing in React, TypeScript, and modern web technologies."
     />
     <meta name="author" content="Prathmesh Shinde" />
+    <meta name="theme-color" content="#0a0b10" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="/src/assets/favicon.svg" type="image/svg+xml" />
 
-    <meta property="og:title" content="Prathmesh Shinde - Frontend Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Prathmesh Shinde" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Prathmesh Shinde — Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio website of Prathmesh Shinde, a results-driven Frontend Developer specializing in React, TypeScript, and modern web technologies."
+      content="Portfolio of Prathmesh Shinde, a results-driven Frontend Developer specializing in React, TypeScript, and modern web technologies."
     />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://lovable.dev/opengraph-image-p98pqg.png"
-    />
-
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@prathmesh" />
+    <meta name="twitter:title" content="Prathmesh Shinde — Frontend Developer" />
     <meta
-      name="twitter:image"
-      content="https://lovable.dev/opengraph-image-p98pqg.png"
+      name="twitter:description"
+      content="Portfolio of Prathmesh Shinde, a results-driven Frontend Developer specializing in React, TypeScript, and modern web technologies."
     />
 
-    <!-- Google Fonts - SF Pro Display (Apple system font alternative) -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
+    <!-- Apply the saved colour theme before first paint so the page never flashes. -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme !== "light" && theme !== "dark") theme = "dark";
+          var root = document.documentElement;
+          root.classList.toggle("dark", theme === "dark");
+          root.style.colorScheme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "dark" ? "#0a0b10" : "#f9f8f6");
+        } catch (e) {}
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prathmesh Shinde",
+        "jobTitle": "Frontend Developer",
+        "email": "mailto:prathmeshshinde1008@gmail.com",
+        "sameAs": [
+          "https://github.com/prathmeshshinde",
+          "https://www.linkedin.com/in/prathmesh-shinde-4b474336a/"
+        ],
+        "knowsAbout": ["React", "Next.js", "TypeScript", "JavaScript", "Redux", "Tailwind CSS", "Jest", "Cypress"]
+      }
+    </script>
   </head>
 
-  <link rel="icon" href="/src/assets/favicon.svg" type="image/x-icon" />
-
   <body>
+    <noscript>This portfolio needs JavaScript enabled to run.</noscript>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
