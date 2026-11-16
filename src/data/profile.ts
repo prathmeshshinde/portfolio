@@ -1,7 +1,8 @@
 /**
  * All portfolio content lives here — edit this file to update the site.
  */
-import portrait from "@/assets/image.png";
+import workspaceImage from "@/assets/workSpace.webp";
+import sayHelloImage from "@/assets/sayHello.webp";
 import reactUixShot from "@/assets/reactuix.png";
 import postingShot from "@/assets/posting.png";
 import anifyShot from "@/assets/anify.png";
@@ -22,11 +23,20 @@ export const profile = {
   resumeUrl: "https://drive.google.com/file/d/1s48_GhcEeD850bEfff1fqmjYT7XNY2s9/view?usp=sharing",
   github: { username: "prathmeshshinde", url: "https://github.com/prathmeshshinde" },
   linkedin: "https://www.linkedin.com/in/prathmesh-shinde-4b474336a/",
-  portrait: {
-    src: portrait,
-    width: 1690,
-    height: 1694,
-    alt: "Illustration of a developer writing code at a desk",
+  /** Framed illustrations: `workspace` on the About page, `sayHello` on the Contact page. */
+  images: {
+    workspace: {
+      src: workspaceImage,
+      width: 1600,
+      height: 1340,
+      alt: "Illustration of Prathmesh Shinde standing in front of a mountain range under a blue sky",
+    },
+    sayHello: {
+      src: sayHelloImage,
+      width: 1600,
+      height: 900,
+      alt: "Illustration of Prathmesh Shinde in sunglasses and a scarf, looking out over the mountains",
+    },
   },
   availability: {
     label: "Open to work",

@@ -19,7 +19,12 @@ export default function Contact() {
           <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr]">
             <aside className="flex flex-col gap-4">
               <Reveal>
-                <PortraitFrame caption="say-hello.png" imgClassName="h-64 object-contain sm:h-80 lg:h-[22rem]" eager />
+                <PortraitFrame
+                  image={profile.images.sayHello}
+                  caption="say-hello.png"
+                  imgClassName="h-64 object-[70%_50%] sm:h-80 lg:h-[22rem]"
+                  eager
+                />
               </Reveal>
               <Reveal delay={0.08} className="panel flex-1 space-y-4 p-6">
                 <p className="inline-flex items-center gap-2.5 border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-foreground">

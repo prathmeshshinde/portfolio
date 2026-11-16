@@ -1,13 +1,21 @@
 import { cn } from "@/lib/utils";
-import { profile } from "@/data/profile";
 
-/** The profile illustration presented in a small "window" frame. */
+export type FrameImage = {
+  readonly src: string;
+  readonly width: number;
+  readonly height: number;
+  readonly alt: string;
+};
+
+/** An illustration presented in a small "window" frame. */
 export default function PortraitFrame({
+  image,
   caption = "workspace.png",
   className,
   imgClassName,
   eager = false,
 }: {
+  image: FrameImage;
   caption?: string;
   className?: string;
   imgClassName?: string;
@@ -25,10 +33,10 @@ export default function PortraitFrame({
       </div>
       <div className="bg-white">
         <img
-          src={profile.portrait.src}
-          alt={profile.portrait.alt}
-          width={profile.portrait.width}
-          height={profile.portrait.height}
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
           loading={eager ? "eager" : "lazy"}
           decoding="async"
           className={cn("h-auto w-full object-cover", imgClassName)}
