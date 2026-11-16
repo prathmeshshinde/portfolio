@@ -23,7 +23,7 @@ export default function About() {
         <Container>
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <Reveal className="mx-auto w-full max-w-sm lg:sticky lg:top-24 lg:max-w-none">
-              <PortraitFrame eager />
+              <PortraitFrame image={profile.images.workspace} eager />
             </Reveal>
 
             <div className="space-y-8 text-center sm:text-start">
